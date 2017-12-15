@@ -38,8 +38,9 @@
 	
 \newcommand{\personal}[6]
 {
+	\small
 	\begin{center}
-	\begin{tcolorbox}[colback=red!65!white, hbox]\color{white}\huge\textsc{#1}\end{tcolorbox}
+	\begin{tcolorbox}[colback=red!5!white, hbox]\color{black}\huge\textsc{#1}\end{tcolorbox}
 	\begin{tcolorbox}[hbox]
 	\begin{varwidth}{\textwidth}
 	\begin{tabular}{@{}l|l}
