@@ -1,0 +1,177 @@
+\documentclass[11pt, letterpaper, sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage{fontawesome}
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Juan Sebasti\'an}{Barbosa}
+%\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+%\address{Calle 126 \# 52A 92}{Bogot\'a}{Colombia}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{316 794 6510}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{6135083}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{jsbarbosacoy@hotmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.github.com/jsbarbosa}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\maketitle
+
+\small{
+Estudiante de último semestre de Física y Química con varios años de experiencia como monitor de cursos de Física y Métodos Computacionales. Habilidades en la identificación y resolución de problemas en múltiples áreas del conocimiento. Motivado por adquirir nuevos conocimientos, y desarrollar o mejorar herramientas que generen impacto positivo en todo tipo de usuarios. Apasionado por el desarrrollo de conocimiento en el mundo de la programación y su aplicaci\'on en diferentes \'areas de investigaci\'on y la industria. Capacidad para trabajar bajo presión, al interior de equipos multidisciplinarios, con aptitud de liderazgo en la implementaci\'on y desarrollo de ideas y la posterior visualizaci\'on de resultados.
+}
+%\small{}
+
+\section{Educación}
+
+\vspace{5pt}
+
+\subsection{Formación académica}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\cventry{2013--Presente}{Estudiante de Física}{Universidad de los Andes}{Colombia}{4.01/5.00}{}}
+\item{\cventry{2014--Presente}{Estudiante de Química}{Universidad de los Andes}{Colombia}{4.01/5.00}{}}
+
+\end{itemize}
+
+\vspace{2pt}
+
+\section{Experiencia laboral}
+	\subsection{Acad\'emica}
+		\begin{itemize}
+			\item
+			{
+				\cventry{Enero 2018--Presente}{Monitor de Investigación}{Universidad de los Andes, Centro de Microscopía}{}{}
+				{
+					\url{https://investigaciones.uniandes.edu.co/es/microscopia/}
+					\vspace{3pt}
+					\begin{itemize}
+						\item Labores administrativas: generación de cotizaciones y atención al usuario
+						\item Auxiliar de laboratorio: manejo del Microscopio Confocal de Barrido Láser, y microscopios de fluorescencia
+						\item Análisis de imágenes de microscopía
+						\item Desarrollador del software para la centralización de las solicitudes del usuario \href{https://github.com/jsbarbosa/microbill}{(\texttt{Microbill}, \faGithub/microbill, {\color{blue} Python})}
+						\item Desarrollador del software para la extracci\'on de datos del Microscopio de Fuerza Atómica
+						\href{https://github.com/jsbarbosa/SPM}{(\texttt{Igor Extractor}, \faGithub/SPM, {\color{blue} Python})}
+						\item Actualmente desarrollando una aplicaci\'on web para la asignaci\'on de reservas con {\color{blue} Django} \href{https://github.com/jsbarbosa/microserver}{(\texttt{microserver}, \faGithub/microserver, {\color{blue} Python})}
+					\end{itemize}
+				}
+			}
+			\item
+			{
+				\cventry{Agosto 2016--Diciembre 2017}{Monitor de Métodos Computacionales}{Universidad de los Andes, Departamento de Física}{}{}
+				{
+					\vspace{3pt}
+					\begin{itemize}
+						\item Proposición de ejercicios y talleres
+						\item Desarrollo de las librerías: \href{https://github.com/jsbarbosa/rastrohut}{\texttt{astrohut} (\faGithub/astrohut, {\color{blue} Python})},  \href{https://github.com/jsbarbosa/rippleTank}{\texttt{rippleTank} (\faGithub/rippleTank, {\color{blue} Python})} y una serie de experimentos demostrativos computacionales \url{https://github.com/ComputoCienciasUniandes/Demonstrations}
+					\end{itemize} 
+				}
+			}
+			\vspace{6pt}
+			\item
+			{
+				\cventry{Agosto 2015--Mayo 2016}{Monitor de Física I}{Universidad de los Andes, Departamento de Física}{}{}
+				{
+					\vspace{3pt}
+					\begin{itemize}
+						\item Desarrollo de metodologías que permiten hacer seguimiento a las falencias o avances de los estudiantes
+					\end{itemize}
+				}
+			}
+			\vspace{6pt}
+			
+			\item{
+				\cventry{Enero 2015--Mayo 2015}{Monitor de Astrobiología}{Universidad de los Andes, Departamento de Física}{}{}
+				{
+					\vspace{3pt}
+					\begin{itemize}
+						\item Experiencia enriquecedora y fundamental para la formaci\'on y el descubrimiento de potencial e inter\'es en el \'ambito de la docencia y la b\'usqueda de conocimiento
+					\end{itemize}
+				}
+			}
+		\end{itemize}
+	\vspace{6pt}
+	\subsection{Industrial}
+		\begin{itemize}
+			\item
+			{
+				\cventry{Enero 2017--Presente}{Desarrollador de Software}{Tausand Electronics}{}{}
+				{
+					Tausand es una empresa de desarrollo de instrumentación científica. \url{https://www.tausand.com/}
+					\vspace{3pt}
+					\begin{itemize}
+						\item Actualmente responsable de desarrollar el software \href{https://www.tausand.com/downloads/}{\texttt{Abacus}} ({\color{blue} Python}), el cual permite usar el contador de coincidencias que lleva el mismo nombre
+						\item Programador de microcontroladores para diversos aplicativos de la empresa
+						\item Vinculaci\'on laboral por horas: 18 horas mensuales en promedio
+					\end{itemize}
+				}
+			}
+			\vspace{6pt}
+		\end{itemize}
+
+\section{Actividades extracurriculares}
+	\begin{itemize}
+		\item{
+			\cventry{Abril 29-30 2017}{Organizador}{Python Bootcamp Uniandes, Universidad de los Andes}{}{}
+			{
+				\url{https://pythonbootcampuniandes.github.io}
+				\vspace{3pt}
+				\begin{itemize}
+					\item Desarrollo y presentación de la soluciones a los ejercicios propuestos durante los talleres
+				\end{itemize}
+			}
+		}
+	\end{itemize}
+
+\section{Habilidades}
+\vspace{6pt}
+
+\begin{itemize}
+	\item \textbf{Programación:}
+	\begin{itemize}
+		\item \textbf{Avanzado:} C, Python, \LaTeX, y Bash
+		\item \textbf{Intermedio:} HTML, Java.
+	\end{itemize} 	
+	\vspace{6pt}
+	\item \textbf{Comunicación:} Inglés flu\'ido. Certificado de IELTS (7.0/9.0).
+\end{itemize}
+
+\vfill
+\enlargethispage{\footskip}
+\footnotetext{\faGithub{} hace referencia a \url{https://github.com/jsbarbosa}}
+
+\end{document}
+
