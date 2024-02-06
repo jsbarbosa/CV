@@ -1,6 +1,6 @@
 % !TeX spellcheck = en_US
 \documentclass[11pt, letterpaper, sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-\usepackage{fontawesome}
+%\usepackage{fontawesome}
 % modern themes
 \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
@@ -14,7 +14,7 @@
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+%\setlength{\makecvtitlenamewidth}{10cm\\}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 \usepackage{import}
 \usepackage{footmisc}
@@ -50,62 +50,49 @@
 \maketitle
 
 \small{
-Natural and data scientist. Physicist and Chemist with several years of experience in the technology industry and
-finance. Skills in identifying and solving problems in multiple areas of knowledge. Motivated by learning, the development or the improvement of tools that generate a positive impact on all types of users. Passionate about
-the world of programming and its application in different areas of research and industry. Ability to work
-under pressure, within multidisciplinary teams, with leadership aptitude in the implementation and development of
-ideas and the subsequent visualization of results.
+Head of Data at Foodology with a background in natural sciences, technology and credit risk assessment. Accomplished physicist and chemist with a robust track record of leveraging data-driven insights to propel organizational success. Demonstrated proficiency in problem-solving across diverse domains and a keen interest in continuous learning. Extensive experience in harnessing the power of data to inform decision-making and drive business outcomes. Specialized skills in data analysis, interpretation, and the development of cutting-edge tools for impactful solutions.
 }
 %\small{}
-
-\section{Education}
-
-\vspace{5pt}
-
-\subsection{Academic training}
-
-\vspace{5pt}
-
-\begin{itemize}
-
-\item{\cventry{2013--2019}{Physics student}{Universidad de los Andes}{Colombia}{4.01/5.00}{}}
-\item{\cventry{2014--2019}{Chemistry student}{Universidad de los Andes}{Colombia}{4.01/5.00}{}}
-\item{\cventry{2020--2020}{Graduated with Honors DS4A}{Correlation One - MinTIC}{Colombia}{375 hours}{}}
-\end{itemize}
-
-\vspace{2pt}
 
 \section{Work experience}
 	\subsection{Industrial}
 	\begin{itemize}
 		\item
 		{
-			\cventry{July 2019--Present}{Data scientist}{Zinobe SAS}{}{}
+			\cventry{October 2022--Present}{Head of data}{Foodology}{}{}
 			{
-				Zinobe is a Colombian Fintech with 9 years in the market, where data is the principle for decision making.
-			    \\
-				\url{https://www.zinobe.com/}
+				Foodology creates and operates virtual restaurant brands, created especially for delivery. \url{https://www.foodology.com.co/}
 				\vspace{3pt}
 				\begin{itemize}
-					\item Development of statistical models for making credit risk decisions ({\color{blue} Python})
-					\item Development of predictive models for process automation ({\color{blue} Python, Bash})
-					\item Coordinator of the psychometrics project for the evaluation of the risk profile of clients ({\color{blue} Python})
-					\item Developer of the platform for the configuration and visualization of the portfolio associated with debt investors ({\color{blue} Python-Django})
-					\item Responsible for communication with the infrastructure team for the deployment and maintenance of models in production ({\color{blue} Python, Docker, AWS})
+					\item Shaping Foodology's data strategy and leveraging data assets to drive business growth and innovation
+					\item Ensure the effective collection, storage, and utilization of data assets
+					\item Oversee the design and implementation of robust data infrastructure, ensuring scalability, reliability, and security
+					\item Drive the development and deployment of advanced analytics models and algorithms to extract actionable insights
+					\item Collaborate cross-functionally with various teams to identify opportunities for leveraging data to drive business value
 				\end{itemize}
 			}
 		}
 		\item
 		{
-			\cventry{January 2017--Present}{Software Developer}{Tausand Electronics}{}{}
+			\cventry{July 2019--October 2022}{Data scientist}{Zinobe - Tangelo Latam}{}{}
 			{
-				Tausand is a scientific instrumentation development company. \url{https://www.tausand.com/}
+				Technology company specializing in alternative credit. \url{https://www.tangelolatam.com/}
 				\vspace{3pt}
 				\begin{itemize}
-					\item 
-					Currently responsible for developing the software \href{https://www.tausand.com/downloads/}{\texttt{Abacus}} ({\color{blue} Python}), which allows to use the coincidence counter that bears the same name
-					\item Microcontroller programmer for various applications of the company
-					%						\item Vinculaci\'on laboral por horas: 18 horas mensuales en promedio
+					\item Development of statistical models for credit risk decisions ({\color{blue} Python}) in Consumer Lending and SME Lending
+					\item Coordinator of the psychometrics project for the evaluation of risk profile in customers ({\color{blue} Python})
+					\item Developer of the platform for optimum portfolio assignation to debt investors ({\color{blue} Python-Django})
+				\end{itemize}
+			}
+		}
+		\item
+		{
+			\cventry{January 2017--January 2021}{Software Developer}{Tausand Electronics}{}{}
+			{
+				Scientific instrumentation development company. \url{https://www.tausand.com/}
+				\vspace{3pt}
+				\begin{itemize}
+					\item Responsible for the development of the software \href{https://www.tausand.com/downloads/}{\texttt{Abacus}} ({\color{blue} Python})
 				\end{itemize}
 			}
 		}
@@ -116,18 +103,15 @@ ideas and the subsequent visualization of results.
 		\begin{itemize}
 			\item
 			{
-				\cventry{January 2018--Present}{Research assistant}{Universidad de los Andes, Centro de Microscopía}{(Microscopy center)}{}
+				\cventry{January 2018--June 2019}{Research assistant}{Universidad de los Andes, Centro de Microscopía}{(Microscopy center)}{}
 				{
 					\url{https://investigaciones.uniandes.edu.co/es/microscopia/}
 					\vspace{3pt}
 					\begin{itemize}
-						\item Administrative tasks: generation of quotes and user service
-						\item Laboratory assistant: management of the Confocal Laser Scanning Microscope, and fluorescence microscopes
-						\item Analysis of microscopy images
-						\item Developer of the software for the centralization of user requests \href{https://github.com/jsbarbosa/microbill}{(\texttt{Microbill}, \faGithub/microbill, {\color{blue} Python})}
-						\item Developer of the software for the data extraction of the Atomic Force Microscope
+						\item Analysis of microscopy images using computer vision
+						\item Developer of the customer relationship management software \href{https://github.com/jsbarbosa/microbill}{(\texttt{Microbill}, \faGithub/microbill, {\color{blue} Python})}
+						\item Developer of the Atomic Force Microscope data extraction software
 						\href{https://github.com/jsbarbosa/SPM}{(\texttt{Igor Extractor}, \faGithub/SPM, {\color{blue} Python})}
-%						\item Actualmente desarrollando una aplicaci\'on web para la asignaci\'on de reservas con {\color{blue} Django} \href{https://github.com/jsbarbosa/microserver}{(\texttt{microserver}, \faGithub/microserver, {\color{blue} Python})}
 					\end{itemize}
 				}
 			}
@@ -137,38 +121,34 @@ ideas and the subsequent visualization of results.
 				{
 					\vspace{3pt}
 					\begin{itemize}
-						\item Proposal of exercises and workshops
-						\item Development of the libraries: \href{https://github.com/jsbarbosa/astrohut}{\texttt{astrohut} (\faGithub/astrohut, {\color{blue} Python})},  \href{https://github.com/jsbarbosa/rippleTank}{\texttt{rippleTank} (\faGithub/rippleTank, {\color{blue} Python})} and a series of computer demonstration experiments \url{https://github.com/ComputoCienciasUniandes/Demonstrations}
+						\item Development of the libraries: \href{https://github.com/jsbarbosa/astrohut}{\texttt{astrohut} (\faGithub/astrohut, {\color{blue} Python})},  \href{https://github.com/jsbarbosa/rippleTank}{\texttt{rippleTank} (\faGithub/rippleTank, {\color{blue} Python})} and a series of computer simulations \url{https://github.com/ComputoCienciasUniandes/Demonstrations}
 					\end{itemize} 
-				}
-			}
-			\vspace{6pt}
-			
-			\item{
-				\cventry{January 2015--May 2016}{Teaching assistant of Astrobiología and Física I}{Universidad de los Andes, Departamento de Física}{(Physics Department, Astrobiology \&  Physics 1)}{}
-				{
-					\vspace{3pt}
-					\begin{itemize}
-						\item Enriching and fundamental experience for the formation and the discovery of potential and interest in the field of teaching and the search for knowledge
-						\item Development of methodologies that allow tracking the failures or progress of students
-					\end{itemize}
 				}
 			}
 		\end{itemize}
 	\vspace{6pt}
 
+\section{Education}
+
+\vspace{5pt}
+
+\subsection{Academic training}
+
+\vspace{5pt}
+
+\begin{itemize}
+	\item{\cventry{2013--2019}{Physics student}{Universidad de los Andes}{Colombia}{4.01/5.00}{}}
+	\item{\cventry{2014--2019}{Chemistry student}{Universidad de los Andes}{Colombia}{4.01/5.00}{}}
+	\item{\cventry{2020--2020}{Graduated with Honors DS4A}{Correlation One - MinTIC}{Colombia}{375 hours}{}}
+	\item{\cventry{2020--2020}{Scrum Foundation Professional Certificate}{CertiProf}{}{}{}}
+	\item{\cventry{2021--2021}{Nanodegree: Data Engineering}{Udacity}{}{}{}}
+	\item{\cventry{2022--2022}{Nanodegree: Data Architect}{Udacity}{}{}{}}
+\end{itemize}
+
+\vspace{2pt}
+
 \section{Extracurricular activities}
 	\begin{itemize}
-		\item{
-			\cventry{Present}{Colaborator, 1/822 coauthors}{Sympy}{}{}
-			{
-				\url{https://github.com/sympy/sympy/blob/master/AUTHORS}
-				\vspace{3pt}
-				\begin{itemize}
-					\item Occasional collaborator in the development of the library \href{https://www.sympy.org/en/index.html}{\color{blue}SymPy} for the symbolic calculation in {\color{blue}Python}
-				\end{itemize}
-			}
-		}
 		\item{
 			\cventry{May 27-31 2019}{Participant}{Machine Learning for Quantum Matter and Technology}{Décima Escuela de F\'isica Matem\'atica}{}
 			{
@@ -177,7 +157,18 @@ ideas and the subsequent visualization of results.
 		}
 	
 		\item{
-			\cventry{Octubre 29-31 2018}{Exhibitor}{Expociencia, Uniandes en Corferias}{}{}
+			\cventry{April 2019}{Colaborator}{Sympy}{}{}
+			{
+				\url{https://github.com/sympy/sympy/blob/master/AUTHORS}
+				\vspace{3pt}
+				\begin{itemize}
+					\item Occasional collaborator in the development of the library \href{https://www.sympy.org/en/index.html}{\color{blue}SymPy} for the symbolic calculation in {\color{blue}Python}
+				\end{itemize}
+			}
+		}
+		
+		\item{
+			\cventry{October 29-31 2018}{Exhibitor}{Expociencia, Uniandes en Corferias}{}{}
 			{
 				\url{https://ingenieria.uniandes.edu.co/Paginas/Noticias.aspx?nid=429}\\
 				\url{https://medicina.uniandes.edu.co/index.php/es/facultad/noticias/448-expociencia-2018}
@@ -199,17 +190,6 @@ ideas and the subsequent visualization of results.
 				\end{itemize}
 			}
 		}
-	
-		\item{
-			\cventry{July 2016-Present}{Content generator and opensource enthusiast}{56 projects on GitHub}{}{}
-			{
-				\url{https://github.com/jsbarbosa}
-				\vspace{3pt}
-				\begin{itemize}
-					\item Believer of the opensource community. Partly I am, thanks to those who spread their projects, and allowed me to learn from them. Reason why I publish my projects of free time, with the hope of giving back a little the generosity of the community that has given me so much
-				\end{itemize}
-			}
-		}
 	\end{itemize}
 
 \section{Languages}
@@ -218,7 +198,6 @@ ideas and the subsequent visualization of results.
 \begin{itemize}
 	\item \textbf{English:} Fluent. IELTS certificate (7.0/9.0)
 	\item \textbf{Spanish:} Native speaker
-	
 \end{itemize}
 
 \vfill
