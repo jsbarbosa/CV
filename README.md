@@ -1,3 +1,3 @@
 # My resume
 
-Last updated on: 04/06/19
+Last updated on: 2024-07-09
