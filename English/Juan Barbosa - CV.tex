@@ -1,15 +1,9 @@
-% !TeX spellcheck = en_US
-\documentclass[11pt, letterpaper, sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-%\usepackage{fontawesome}
-% modern themes
-\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\documentclass[11pt, letterpaper, sans]{moderncv}
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % character encoding
-\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace -by the encoding you are using
 
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
@@ -19,17 +13,18 @@
 \usepackage{import}
 \usepackage{footmisc}
 \usepackage{multicol}
+\usepackage{float}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
 
 % personal data
 \name{Juan Sebasti\'an}{Barbosa}
-%\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
-%\address{Calle 126 \# 52A 92}{Bogot\'a}{Colombia}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-\phone[mobile]{316 794 6510}                   % optional, remove / comment the line if not wanted
+%\address{}{Bogot\'a, Colombia}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+57 316 794 6510}                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{6135083}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
 \email{jsbarbosacoy@hotmail.com}                               % optional, remove / comment the line if not wanted
 \homepage{www.github.com/jsbarbosa}                         % optional, remove / comment the line if not wanted
-%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\extrainfo{Bogotá, Colombia}                 % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
@@ -39,6 +34,10 @@
 %\makeatother
 %\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
 
+%\definecolor{color3}{rgb}{0.50,0.33,0.80}% purple
+\definecolor{color3}{rgb}{0.93,0.56,0.30}% orange
+\definecolor{color3}{rgb}{0.63,0.26,0.00}% orange
+
 % bibliography with mutiple entries
 %\usepackage{multibib}
 %\newcites{book,misc}{{Books},{Others}}
@@ -46,175 +45,217 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \maketitle
 
 \small{
-Data team lead with a background in natural sciences, technology and credit risk assessment. Accomplished physicist and chemist with a robust track record of leveraging data-driven insights to propel organizational success. Demonstrated proficiency in problem-solving across diverse domains and a keen interest in continuous learning. Extensive experience in harnessing the power of data to inform decision-making and drive business outcomes. Specialized skills in data analysis, interpretation, and the development of cutting-edge tools for impactful solutions. Skilled in cloud computing with expertise in utilizing AWS services to architect scalable and resilient solutions, optimize data storage and retrieval processes, and implement secure and cost-effective cloud infrastructure strategies.
+Data team lead with a background in natural sciences, technology and credit risk assessment. Accomplished physicist and chemist with a robust track record of leveraging data-driven insights to propel organizational success. Proficiency in problem-solving across diverse domains and a keen interest in continuous learning. Extensive experience in harnessing the power of data to inform decision-making and drive business outcomes. Specialized skills in data analysis, interpretation, and the development of data tools for impactful solutions. Skilled in cloud computing with expertise in utilizing AWS services to build scalable and resilient solutions, optimize data storage and retrieval processes, and implement secure and cost-effective cloud infrastructure strategies.
 }
-%\small{}
 
-\section{Work experience}
-	\subsection{Industrial}
-	\begin{itemize}
-		\item
-		{
-			\cventry{October 2022--June 2024}{Head of Data}{Foodology}{Cloud computing with AWS}{}
-			{
-				Foodology creates and operates virtual restaurant brands, created especially for delivery. \url{https://www.foodology.com.co/}
-				\vspace{3pt}
-				\begin{itemize}
-					\item Shaping Foodology's data strategy and leveraging data assets to drive business growth and innovation
-					\item Ensure the effective collection, storage, and utilization of data assets
-					\item Oversee the design and implementation of robust data infrastructure, ensuring scalability, reliability, and security
-					\item Drive the development and deployment of advanced analytics models and algorithms to extract actionable insights
-					\item Collaborate cross-functionally with various teams to identify opportunities for leveraging data to drive business value
-				\end{itemize}
-			}
-		}
-		\item
-		{
-			\cventry{July 2019--October 2022}{Data scientist}{Zinobe - Tangelo Latam}{Cloud computing with AWS}{}
-			{
-				Technology company specializing in alternative credit. \url{https://www.tangelolatam.com/}
-				\vspace{3pt}
-				\begin{itemize}
-					\item Development of statistical models for credit risk decisions ({\color{blue} Python}) in Consumer Lending and SME Lending
-					\item Coordinator of the psychometrics project for the evaluation of risk profile in customers ({\color{blue} Python})
-					\item Developer of the platform for optimum portfolio assignation to debt investors ({\color{blue} Python-Django})
-				\end{itemize}
-			}
-		}
-		\item
-		{
-			\cventry{January 2017--January 2021}{Software Developer}{Tausand Electronics}{}{}
-			{
-				Scientific instrumentation development company. \url{https://www.tausand.com/}
-				\vspace{3pt}
-				\begin{itemize}
-					\item Responsible for the development of the software \href{https://www.tausand.com/downloads/}{\texttt{Abacus}} ({\color{blue} Python})
-				\end{itemize}
-			}
-		}
-		\vspace{6pt}
-	\end{itemize}
+\section{Experience}
+    \cventry{October 2022--June 2024}{Head of Data}{Foodology}{}{}
+    {
+        Foodology creates and operates virtual restaurant brands, created especially for delivery. \url{https://www.foodology.com.co/}
+        \vspace{3pt}
+        \begin{itemize}
+            \item Shaped Foodology's data strategy leveraging data assets to drive business growth and innovation
+            \item Built a culture of data-driven decision-making by democratization access to data by launching \href{https://superset.apache.org/}{\color{color3} Apache Superset} and leveraging drag-and-drop features to extract insights by all kind of teams
+            \item Collaborate cross-functionally with various teams to identify opportunities for leveraging data to drive business value by leading a group of 4 data analysts, 3 data engineers and a data scientist
+            \item Directed the development and implementation of \href{https://airflow.apache.org/}{\color{color3}{Apache Airflow}} to orchestrate more than 100 automated ETL processes, decreasing down times due to failures to almost zero in the last months and allowing the team to proactively monitor the performance of the jobs
+            \item Reduced infrastructure cost by 30 \%, with twice as much information by designing and implementing a robust data infrastructure, ensuring scalability, reliability, and security
+            \item Helped reduce stock outs in Brazilian stores by a factor of 4x by allowing the supply team to change from a reactive to a proactive methodology by providing better and faster insights through the day
+            \item Received the Rocket recognition twice for top performance, got awarded a top leader recognition (9.85 / 10 Leadership Feedback) and increased the data team eNPS score from 50 to 88
+        \end{itemize}
+    }
 
-	\subsection{Academic}
-		\begin{itemize}
-			\item
-			{
-				\cventry{January 2018--June 2019}{Research assistant}{Universidad de los Andes, Centro de Microscopía}{(Microscopy center)}{}
-				{
-					\url{https://investigaciones.uniandes.edu.co/es/microscopia/}
-					\vspace{3pt}
-					\begin{itemize}
-						\item Analysis of microscopy images using computer vision
-						\item Developer of the customer relationship management software \href{https://github.com/jsbarbosa/microbill}{(\texttt{Microbill}, \faGithub/microbill, {\color{blue} Python})}
-						\item Developer of the Atomic Force Microscope data extraction software
-						\href{https://github.com/jsbarbosa/SPM}{(\texttt{Igor Extractor}, \faGithub/SPM, {\color{blue} Python})}
-					\end{itemize}
-				}
-			}
-			\item
-			{
-				\cventry{August 2016--December 2017}{Teaching assistant of  Métodos Computacionales}{Universidad de los Andes, Departamento de Física}{(Physics Department, Computational methods)}{}
-				{
-					\vspace{3pt}
-					\begin{itemize}
-						\item Development of the libraries: \href{https://github.com/jsbarbosa/astrohut}{\texttt{astrohut} (\faGithub/astrohut, {\color{blue} Python})},  \href{https://github.com/jsbarbosa/rippleTank}{\texttt{rippleTank} (\faGithub/rippleTank, {\color{blue} Python})} and a series of computer simulations \url{https://github.com/ComputoCienciasUniandes/Demonstrations}
-					\end{itemize} 
-				}
-			}
-		\end{itemize}
-	\vspace{6pt}
+    \cventry{July 2019--October 2022}{Data scientist}{Zinobe - Tangelo Latam}{}{}
+    {
+        Technology company specializing in alternative credit. \url{https://www.tangelolatam.com/}
+        \vspace{3pt}
+        \begin{itemize}
+            \item Studied the behavior of clients with consumer credit loans, and built a statistical model for automatic approval of 6,000 loans \href{https://forbes.co/2020/05/13/emprendedores/zinobe-obtiene-us30-millones-en-financiacion-para-otorgar-mas-creditos-digitales}{\color{color1} increasing the coverage of credit facilities for 4,000 low income Colombians during the Covid pandemic}
+            \item Developed an scoring system for \href{https://tekiosmag.com/2022/03/31/fintech-tangelo-anuncia-alianza-con-el-unicornio-mexicano-clip-y-dell-leasing/}{\color{color1} Merchant Cash Advance using Clip terminals} that lead to about 10,000 disbursements 
+            \item Built a decision support system, using descriptive statistical analysis and predictive models to assess small and medium-sized enterprises with limited information to reduce the credit committee evaluation time
+            \item Coordinator and developer of the \href{https://psychometrics.zinobe.com/v1/}{\color{color1} psychometrics project}, a project that increased approval rates of customers by measuring the willingness to pay a loan by using a behavioral test developed using {\color{color3} Django}
+            \item Designed and deployed the \href{https://contxto.com/es/fondeo/fintech-zinobe-levanta-inversion-monachil-capital-partners/}{\color{color1} system for portfolio (credit) assignation to debt investors} using {\color{color3} Django}
+        \end{itemize}
+    }
+
+    \cventry{January 2017--January 2021}{Software Developer}{Tausand Electronics}{}{}
+    {
+        Scientific instrumentation development company. \url{https://www.tausand.com/}
+        \vspace{3pt}
+        \begin{itemize}
+            \item Designer and developer of the  \href{https://www.tausand.com/downloads/}{\color{color1} \texttt{Abacus}} software to be used with the laboratory equipment
+            \item Built the interface to deal with the low level communication with the Abacus device, so that customer could import a library and customice the behavior of an experiment 
+        \end{itemize}
+    }
+
+    \cventry{January 2018--June 2019}{Research assistant}{Universidad de los Andes, Centro de Microscopía}{}{}
+    {
+        \url{https://investigaciones.uniandes.edu.co/es/microscopia/}
+        \vspace{3pt}
+        \begin{itemize}
+            \item Guided investigators on image analysis techniques to automate the extraction of information using computer vision to count, and measure relevant properties of the image
+            \item Developed the customer relationship management software \href{https://github.com/jsbarbosa/microbill}{\color{color1}(\texttt{Microbill}, \faGithub/microbill, \color{color3}Python)} used to quote and keep track of the customer balance of the services used in the research facility
+            \item Developed the Atomic Force Microscope data extraction software
+            \href{https://github.com/jsbarbosa/SPM}{\color{color1}(\texttt{Igor Extractor}, \faGithub/SPM, \color{color3} Python}) to help customers extract their data without the need of specialized software in an easy to read format
+        \end{itemize}
+    }
+
+    \cventry{August 2016--December 2017}{Teaching assistant of Computational Methods}{Universidad de los Andes, Departamento de Física}{}{}
+    {
+        \vspace{3pt}
+        \begin{itemize}
+            \item Developed \href{https://jsbarbosa.github.io/astrohut/}{\color{color1}\texttt{astrohut} (\faGithub/astrohut)} a library for n-body gravitational simulations with {\color{color3} Python}, to help physics students understand the fundamental concepts of numerical simulations 
+            \item Developed \href{https://jsbarbosa.github.io/rippleTank/}{\color{color1}\texttt{rippleTank} (\faGithub/rippleTank)} a library for simulating wave propagation in ripple tanks, it includes different boundary conditions and a framework to build obstacles in the tank. Build with {\color{color3} Python} 
+            \item Published \href{https://github.com/ComputoCienciasUniandes/Demonstrations}{\color{color1} a set of computer simulations describing a variety of simple and complex physical systems} to motivate college and school students to develop programming abilities
+        \end{itemize} 
+    }
 
 \section{Education}
-
+\subsection{Majors}
 \vspace{5pt}
+    \cventry{2013--2019}{Physicist}{Universidad de los Andes}{Colombia}{}{
+        \vspace{3pt}
+        \begin{itemize}
+            \item GPA: 4.01/5.00
+            \item Dissertation on \href{https://uniandes.primo.exlibrisgroup.com/permalink/57U_UDLA/1g0omtq/alma991005489711507681}{\color{color1} Orbits of black holes in galactic triaxial potentials}, a simulation of astronomical physical systems
+            \item Teaching assistant of the Computational Methods class for three consecutive semesters
+        \end{itemize}
+    }
+    
+    \cventry{2014--2019}{Chemist}{Universidad de los Andes}{Colombia}{}{
+        \vspace{3pt}
+        \begin{itemize}
+            \item GPA: 4.01/5.00
+            \item Dissertation on the \href{https://uniandes.primo.exlibrisgroup.com/permalink/57U_UDLA/1g0omtq/alma991005490425807681}{\color{color1} Installation and Calibration of a 2277 Thermal Activity Monitor microcalorimeter}
+        \end{itemize}
+    }
 
-\subsection{Academic training}
-
-\vspace{5pt}
-
-\begin{itemize}
-	\item{\cventry{2013--2019}{Physics student}{Universidad de los Andes}{Colombia}{4.01/5.00}{}}
-	\item{\cventry{2014--2019}{Chemistry student}{Universidad de los Andes}{Colombia}{4.01/5.00}{}}
-	\item{\cventry{2020--2020}{Graduated with Honors DS4A}{Correlation One - MinTIC}{Colombia}{375 hours}{}}
-	\item{\cventry{2020--2020}{Scrum Foundation Professional Certificate}{CertiProf}{}{}{}}
-	\item{\cventry{2021--2021}{Nanodegree: Data Engineering}{Udacity}{}{}{}}
-	\item{\cventry{2022--2022}{Nanodegree: Data Architect}{Udacity}{}{}{}}
-\end{itemize}
-
+\vspace{12pt}
+\subsection{Certifications}
+	\cventry{2022--2022}{Nanodegree: Data Architect}{Udacity}{}{}{
+        \vspace{3pt}
+        \begin{itemize}
+            \item Fundations of Data Architecture were used to build a \href{https://github.com/jsbarbosa/Data-Architect-Nanodegree/tree/main/Designing\%20HR\%20DB}{\color{color1} HR database}
+            \item Designed and deployed a \href{https://github.com/jsbarbosa/Data-Architect-Nanodegree/tree/main/WeatherAndRestaurants}{\color{color1} data warehouse ({\color{color3}Redshift})} with YELP and climate datasets in order to analyze the effects the weather has on customer reviews of restaurants
+            \item Built a Data Governance project implementing data quality validations and master data management
+        \end{itemize}
+    }
+	\cventry{2021--2021}{Nanodegree: Data Engineering}{Udacity}{}{}{
+        \vspace{3pt}
+        \begin{itemize}
+            \item Designed and deployed \href{https://github.com/jsbarbosa/Data-Modeling-with-Apache-Cassandra}{\color{color1} a NoSQL ETL pipeline for a music streaming app} using {\color{color3} Python} and {\color{color3} Apache Cassandra} for storage
+            \item Created an \href{https://github.com/jsbarbosa/Data-Warehouse}{\color{color1} ETL pipeline} that extracts data from {\color{color3} S3}, stages in {\color{color3} Redshift}, and transforms data into a set of dimensional tables
+            \item Created a \href{https://github.com/jsbarbosa/Data-Lake}{\color{color1} data lake using an ETL pipeline in \color{color3} Spark} that reads data from {\color{color3} S3}, processes the data into analytics tables, and loads them back into {\color{color3} S3}
+            \item Deployed an \href{https://github.com/jsbarbosa/UdacityCapstone}{\color{color3} Airflow \color{color1} pipeline} to load immigration and demographics data into a data lake hosted in {\color{color3} S3} using parquet files, partitioned by date and state, to study the relation of immigration and demographic data in the US
+        \end{itemize}
+    }
+    \cventry{2020--2020}{Data Science For All}{Correlation One - MinTIC}{Colombia}{375 hours}{
+        \vspace{3pt}
+        \begin{itemize}
+            \item Graduated with Honors
+            \item Collaborated with a team of students to \href{https://github.com/DS4A-IGAC-project/}{\color{color1} build a system} for the \href{https://www.igac.gov.co/}{\color{color1} IGAC}, in which physical soil properties were used to predict chemical properties of the soil without the use of specialized equipment
+        \end{itemize}
+    }
+    \cventry{2020--2020}{Scrum Foundation Professional Certificate}{CertiProf}{}{}{
+        \vspace{3pt}
+        \begin{itemize}
+            \item Studied the foundational principles of the {\color{color3} Scrum - Agile} methodology
+        \end{itemize}
+    }
+    
 \vspace{2pt}
-
 \section{Extracurricular activities}
-	\begin{itemize}
-		\item{
-			\cventry{May 27-31 2019}{Participant}{Machine Learning for Quantum Matter and Technology}{Décima Escuela de F\'isica Matem\'atica}{}
-			{
-				\url{https://matematicas.uniandes.edu.co/~cursillo_gr/escuela2019/index.php}
-			}
-		}
-	
-		\item{
-			\cventry{April 2019}{Colaborator}{Sympy}{}{}
-			{
-				\url{https://github.com/sympy/sympy/blob/master/AUTHORS}
-				\vspace{3pt}
-				\begin{itemize}
-					\item Occasional collaborator in the development of the library \href{https://www.sympy.org/en/index.html}{\color{blue}SymPy} for the symbolic calculation in {\color{blue}Python}
-				\end{itemize}
-			}
-		}
-		
-		\item{
-			\cventry{October 29-31 2018}{Exhibitor}{Expociencia, Uniandes en Corferias}{}{}
-			{
-				\url{https://ingenieria.uniandes.edu.co/Paginas/Noticias.aspx?nid=429}\\
-				\url{https://medicina.uniandes.edu.co/index.php/es/facultad/noticias/448-expociencia-2018}
-				\vspace{3pt}
-				\begin{itemize}
-					\item Science disseminator for the attending public
-					\item Presenter of demonstration experiments with microscopes from Centro de Microscop\'ia of Universidad de los Andes
-				\end{itemize}
-			}
-		}
-	
-		\item{
-			\cventry{April 29-30 2017}{Organizer}{Python Bootcamp Uniandes, Universidad de los Andes}{}{}
-			{
-				\url{https://pythonbootcampuniandes.github.io}
-				\vspace{3pt}
-				\begin{itemize}
-					\item Development and presentation of the solutions to the exercises proposed during the workshops
-				\end{itemize}
-			}
-		}
-	\end{itemize}
+    \cventry{May 2019}{Participant}{Machine Learning for Quantum Matter and Technology}{Décima Escuela de F\'isica Matem\'atica}{}
+    {
+        \url{https://matematicas.uniandes.edu.co/~cursillo_gr/escuela2019/index.php}
+    }
+    
+    \cventry{April 2019}{Collaborator}{Sympy}{}{}
+    {
+        \url{https://github.com/sympy/sympy/blob/master/AUTHORS}
+        \vspace{3pt}
+        \begin{itemize}
+            \item Collaborated in the development of the library \href{https://www.sympy.org/en/index.html}{\color{color3} SymPy} for the symbolic calculation in {\color{color3} Python}
+        \end{itemize}
+    }
+    \cventry{October 2018}{Exhibitor}{Expociencia, Uniandes en Corferias}{}{}
+    {
+        \url{https://medicina.uniandes.edu.co/index.php/es/facultad/noticias/448-expociencia-2018}
+        \vspace{3pt}
+        \begin{itemize}
+            \item Science disseminator for light, and electron microscopy techniques for the attending public
+            \item Presenter of demonstration experiments with microscopes from Centro de Microscop\'ia of Universidad de los Andes
+        \end{itemize}
+    }
+    
+    \cventry{April 2017}{Organizer}{Python Bootcamp Uniandes, Universidad de los Andes}{}{}
+    {
+        \url{https://pythonbootcampuniandes.github.io}
+        \vspace{3pt}
+        \begin{itemize}
+            \item Developed and presented the solutions to the exercises proposed during the workshops
+            \item Helped attendees with the fundamentals of {\color{color3} Python} and the use {\color{color3} Pandas} for basic data analysis
+        \end{itemize}
+    }
 
 \section{Languages}
 \vspace{3pt}
 
 \begin{itemize}
-	\item \textbf{English:} Fluent. IELTS certificate (7.0/9.0)
+	\item \textbf{English:} Fluent (C1). IELTS certificate (7.0/9.0)
 	\item \textbf{Spanish:} Native speaker
 \end{itemize}
 
-\section{Tools}
+\section{Tools and Technologies}
 \vspace{3pt}
 
-\begin{multicols}{2}
-    \begin{itemize}
-    	\item \textbf{Python:} Proficient
-    	\item \textbf{SQL:} Proficient
-    	\item \textbf{Apache Airflow:} Proficient
-    	\item \textbf{Apache Superset:} Proficient
-        \item \textbf{Git:} Proficient
-        \item \textbf{Docker:} Proficient
-        \item \textbf{Cloud (Upper intermediate):} Upper intermediate
-    \end{itemize}
-\end{multicols}
+{
+    \center
+    \begin{tabular}{p{0.33\linewidth}p{0.33\linewidth}p{0.33\linewidth}}
+        \centering\large\color{color1} Databases & \centering\large\color{color1} Programming languages & \centering\large\color{color1} Others \\
+        \cr
+        \textbf{SQL (Family):} Proficient \newline
+        \textbf{Mongo:} Proficient \newline
+        \textbf{Cassandra:} Intermediate
+        & 
+        \textbf{Python:} Proficient \newline
+        \textbf{C:} Intermediate \newline
+        \textbf{Java:} Basic \newline
+        \textbf{R:} Basic
+        &
+        \textbf{Apache Spark:} Basic \newline
+        \textbf{Git:} Proficient \newline
+        \textbf{Linux:} Proficient \newline
+        \textbf{Excel:} Intermediate \newline
+    \end{tabular}
+}
+
+{
+    \center
+    \begin{tabular}{p{0.33\linewidth}p{0.33\linewidth}p{0.33\linewidth}}
+        \centering\large\color{color1} Data Analytics & \centering\large\color{color1} Data Science & \centering\large\color{color1} Data Engineering \\
+        \cr
+        \textbf{Apache Superset:} Proficient \newline
+        \textbf{Chartio:} Proficient \newline 
+        \textbf{Looker:} Intermediate \newline
+        \textbf{Quicksight:} Intermediate \newline
+        \textbf{Tableau:} Basic \newline
+        \textbf{Power BI:} Basic
+        & 
+        \textbf{Scikit-learn:} Proficient \newline
+        \textbf{TensorFlow:} Basic
+        &
+        \textbf{Apache Airflow:} Proficient \newline
+        \textbf{Docker:} Proficient \newline
+        \textbf{AWS Services:} Proficient \newline
+        \textbf{Google Cloud:} Intermediate
+    \end{tabular}
+}
+
+
 
 %\vfill
 %\enlargethispage{\footskip}
